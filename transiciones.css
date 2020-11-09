@@ -1,0 +1,44 @@
+*/
+.aparecer-enter{
+	opacity: 0;
+}
+
+
+.aparecer-enter-active{
+	transition: opacity 1s;
+}
+
+
+.aparecer-leave-to{
+	opacity: 0;
+}
+
+
+.aparecer-leave-active{
+	transition: opacity 1s;
+}
+
+
+.anima-enter-active{
+	animation: animacion-in 0.5s;
+}
+
+
+
+.anima-leave-active{
+	animation: animacion-in 0.5s reverse;
+}
+
+
+
+@keyframes animacion-in{
+	0%{
+		transform: scale(0);
+	}
+	50%{
+		transform: scale(1.5);
+	}
+	100%{
+		transform: scale(1);
+	}
+}
